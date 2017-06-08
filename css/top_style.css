@@ -1,0 +1,222 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background: #E6D0BA;
+}
+header{background: #3e4156;
+    border-radius: 5px;
+    background:  linear-gradient(180deg, #797C91,#3e4156);
+    font-weight:bold;
+}
+#logo{
+    float: left;
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    text-shadow: 3px 3px  #3B3E53 ;
+    color: #CEB8A2;
+    letter-spacing: 5px;
+     
+}
+/* СТИЛИ ДЛЯ ГОРИЗОНТАЛЬНОГО МЕНЮ*/
+
+.nav{float: right;}
+.nav li{display: inline-block;
+font-family: Comic Sans MS, sans-serif;
+text-decoration: none;}
+.nav li a,
+#touch-menu{
+    padding: 10px 15px;
+    font-weight:bold;
+    font-size: 18px; 
+    color:#fff;
+    background: #3e4156;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+        
+}
+.nav li a:hover,
+#touch-menu:hover{background: #515572;
+text-decoration: underline;}
+
+#touch-menu{display: none;}
+
+/* СТИЛИ ДЛЯ ОСНОВНОГО КОНТЕНТА*/
+
+.layout,.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.layout,.container {
+  width: 90%;
+  max-width: 1124px;
+  padding: 13px;
+  margin: 0 auto;
+}
+
+
+.layout{  background: url(kniga.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover;
+    height: calc(100vh - 145px);
+    border-radius: 5px;
+}
+.content{float:left;
+width: 60%;
+ background-color: rgba(154,153,152,0.6 );
+border-radius: 5px;}
+
+input{
+    float:left;
+    width: 50%;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 20px;
+    color: #819CFB;
+    box-shadow: 3px 3px #898888;
+    border-radius: 5px;
+    margin: 20px 0 0 40px;
+    clear: both;      
+}
+textarea{
+     float:left;
+    width: 50%;
+    height: 130px;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 20px;
+    color: #819CFB;
+    box-shadow: 3px 3px #898888;
+    border-radius: 5px;
+    margin: 20px 0 0 40px;
+    clear: both;  
+}
+#message_show{
+    float: left;
+    color: red;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+aside{
+    margin-left: 70%;
+    
+}
+
+
+
+/* СТИЛИ ДЛЯ ВЕРТИКАЛЬНОГО МЕНЮ*/
+#nav_sidebar{
+  margin: 0;
+  list-style-type: none;
+
+
+}
+ #nav_sidebar li {
+      border-radius: 5px;
+     
+      }
+ #nav_sidebar a {
+        background-color: #949494;
+        color: #fff;
+        font-family: Comic Sans MS, sans-serif;
+        padding: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border-radius: 5px;
+       margin: 10px;
+       padding: 10px;
+       opacity: 0.9;
+      font-size: 20px;
+     
+      }
+#nav_sidebar a:hover{
+    background: #676A7F;
+text-decoration: underline;
+}
+
+/*СТИЛИ ДЛЯ ПОДВАЛА*/
+footer{
+    max-width: 1124px;
+  padding: 13px;
+  margin: 0 auto;
+    background: #C5AF99;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px){
+   
+    .nav{
+        display: none;
+        float: none;}
+    .nav li{
+        display: block;
+        width: 100%;
+    }
+    .nav li a{
+        padding: 5px;;
+        color:#666;
+        margin: 2px;
+        border-top: 2px solid #eee;
+        background:#F7F4DE;
+        width: 100%;
+    
+    }
+
+    #touch-menu{display:block;}
+    .nav li a:hover{background: #D6D9DA;
+text-decoration: underline;}
+}
+
+@media screen and (max-width: 700px){
+  .content{
+    float: none;
+    width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+}
+    input{
+        float: none;
+        margin: 5px;
+        width: 80%;
+        
+        
+    }
+    textarea{
+        margin: 5px 0 0 5px;    
+        float: none;
+        width: 80%;
+        
+    }
+  
+  aside{
+    margin-left: 0;
+    
+}
+    
+    
+}
+@media screen and (min-width: 1366px){
+    .layout{
+        height: calc(100vh - 145px);
+         
+    }
+    body{
+        text-align: center;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+ 

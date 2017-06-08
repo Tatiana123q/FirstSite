@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background: #E6D0BA;
+}
+header{background: #3e4156;
+    border-radius: 5px;
+    background:  linear-gradient(180deg, #797C91,#3e4156);
+    font-weight:bold;
+}
+#logo{
+    float: left;
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    text-shadow: 3px 3px  #3B3E53 ;
+    color: #CEB8A2;
+    letter-spacing: 5px;
+     
+}
+/* СТИЛИ ДЛЯ ГОРИЗОНТАЛЬНОГО МЕНЮ*/
+
+.nav{float: right;}
+.nav li{display: inline-block;
+font-family: Comic Sans MS, sans-serif;
+text-decoration: none;}
+.nav li a,
+#touch-menu{
+    padding: 10px 15px;
+    font-weight:bold;
+    font-size: 18px; 
+    color:#fff;
+    background: #3e4156;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+        
+}
+.nav li a:hover,
+#touch-menu:hover{background: #515572;
+text-decoration: underline;}
+
+#touch-menu{display: none;}
+
+/* СТИЛИ ДЛЯ ОСНОВНОГО КОНТЕНТА*/
+
+.layout,.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.layout,.container {
+  width: 90%;
+  max-width: 1124px;
+  padding: 13px;
+  margin: 0 auto;
+}
+
+
+.layout{ background: url(kniga.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover;
+    height: 78vh;
+    border-radius: 5px;
+}
+.content{
+    float: left;
+    width: 70%;
+      font-family: Comic Sans MS, sans-serif;
+      font-size: 15px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow:hidden;
+    
+}
+.content ul li{
+    list-style: none;
+    clear: both;
+    
+     
+
+}
+.content ul li a img{
+    margin-bottom: 50px;
+    border: 2px solid #1B1B2D;
+    border-radius: 4px;
+    padding: 6px;
+    overflow: hidden;
+    float: left;
+    max-width: 100%;
+    width: 250px;
+    height: 395px;
+    max-height: 100%;
+    margin-right: 7px;
+}
+.content ul li a {
+    text-decoration: none;
+     color: #E6D0BA; 
+    margin-left: 6px;
+}
+h3{
+    text-shadow: 3px 3px 3px #273236;
+    font-size: 130%;
+}
+
+img:hover {
+    box-shadow: 7px 7px 7px #485357;
+}
+
+
+
+aside{
+    margin-left: 70%;
+    
+}
+
+
+
+
+/* СТИЛИ ДЛЯ ВЕРТИКАЛЬНОГО МЕНЮ*/
+#nav_sidebar{
+  margin: 0;
+  list-style-type: none;
+
+
+}
+ #nav_sidebar li {
+      border-radius: 5px;
+     
+      }
+ #nav_sidebar a {
+        background-color: #949494;
+        color: #fff;
+        font-family: Comic Sans MS, sans-serif;
+        padding: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border-radius: 5px;
+       margin: 10px;
+       padding: 10px;
+       opacity: 0.9;
+      font-size: 20px;
+     
+      }
+#nav_sidebar a:hover{
+    background: #676A7F;
+text-decoration: underline;
+}
+
+/*СТИЛИ ДЛЯ ПОДВАЛА*/
+footer{
+    max-width: 1124px;
+  padding: 13px;
+  margin: 0 auto;
+    background: #C5AF99;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px){
+   
+    .nav{
+        display: none;
+        float: none;}
+    .nav li{
+        display: block;
+        width: 100%;
+    }
+    .nav li a{
+        padding: 5px;;
+        color:#666;
+        margin: 2px;
+        border-top: 2px solid #eee;
+        background:#F7F4DE;
+        width: 100%;
+    
+    }
+
+    #touch-menu{display:block;}
+    .nav li a:hover{
+        background: #D6D9DA;
+        text-decoration: underline;}
+     
+    .content ul li a img{
+        float:none;
+        margin-bottom:0;
+        width: auto;
+        margin-left: 0;
+       
+    }
+    
+    
+}
+  @media screen and (max-width: 760px){
+
+.content{
+      float:none;
+      width: 100%;
+      text-align: center;}
+      
+        aside{
+    margin-left: 0;
+    
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

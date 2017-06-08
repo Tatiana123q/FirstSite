@@ -1,0 +1,83 @@
+h1{ font: bold  italic 250% serif;
+margin-left: 20%}
+h2{font: bold italic 150% serif;}
+h4{text-align:right;}
+#body{
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #8CA2BA;
+    background-image: url(22.jpg);
+    background-repeat: repeat;
+}
+.footer{
+    width: 100%;
+    bottom: 0px;  
+    background-color:#D5BAE4;
+
+}
+.navig {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    background-image: url(5.jpg);
+    background-repeat: repeat-x, repeat-y;
+;
+  
+}
+ .navig li{
+    font-size: 120%;
+    display: inline;
+    margin-right: 25px;
+    padding: 8px;
+     background-image: url(12345.jpg);
+    background-repeat: repeat-x;
+
+}
+ .header, .sidebar, .content { 
+    padding: 5px; /* Поля */
+    border: solid 1px #000; /* Параметры рамки */
+    background: #e3e8cc; /* Цвет фона */
+   }
+.header{
+    background-image: url(header_2.jpg);
+    background-size: 100%;
+    font-size: 100%;
+
+}
+.layout {
+    margin: 15px 0; /* Отступы сверху и снизу */ 
+    overflow: hidden; /* Отменяем действие float */
+ 
+   }
+
+.content { /* Основное содержание страницы */
+     width: 70%; /* Ширина меню */
+    float: left; /* Состыковка с другим слоем по горизонтали */
+    background: #FAFAD2;
+}
+.sidebar {  
+    margin-left: 72%;/* Навигация по сайту */
+    min-width: 50px;
+    background: #FAFAD2;
+    
+   }
+
+.art{margin: 3px;}
+.art{
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .sidebar{
+        display:none;
+    }}
+ @media screen and (max-width: 600px){
+     .content{width: 100%;}
+    
+}
+ @media screen and (max-width: 750px){
+     .header{ 
+         background-image: url(14.jpg);
+         background-size: 100%;
+    
+     }}
